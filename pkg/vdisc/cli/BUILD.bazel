@@ -8,6 +8,7 @@ go_library(
         "cacheutil.go",
         "cli.go",
         "cp.go",
+        "csv.go",
         "inspect.go",
         "ls.go",
         "mount.go",

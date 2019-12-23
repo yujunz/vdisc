@@ -32,6 +32,7 @@ type CLI struct {
 	Burn    BurnCmd    `cmd help:"Burn creates a new vdisc"`
 	Cache   CacheCmd   `cmd help:"Cache management"`
 	Cp      CpCmd      `cmd help:"Copy a file from a vdisc to a local path"`
+	Csv     CsvCmd     `cmd help:"Print the file system tree as a csv"`
 	Inspect InspectCmd `cmd help:"Inspect a vdisc"`
 	Ls      LsCmd      `cmd help:"List directory contents"`
 	Mount   MountCmd   `cmd help:"Mount a vdisc"`

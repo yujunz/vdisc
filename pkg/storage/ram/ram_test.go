@@ -34,7 +34,7 @@ import (
 func TestRamDriver(t *testing.T) {
 	bg := context.Background()
 
-	m := ramdriver.NewDriver()
+	m := ram.NewDriver()
 
 	wf1, err := m.Create(bg, "ram:foo")
 	assert.NotNil(t, wf1)
@@ -83,7 +83,7 @@ func TestRamDriver(t *testing.T) {
 func TestRamDriverDirs(t *testing.T) {
 	bg := context.Background()
 
-	m := ramdriver.NewDriver()
+	m := ram.NewDriver()
 
 	assert.Nil(t, writeFile(m, "ram:///foo/bar/baz.txt", bytes.NewReader([]byte("test"))))
 	assert.Nil(t, writeFile(m, "ram:///foo/bar.txt", bytes.NewReader([]byte("test2"))))
